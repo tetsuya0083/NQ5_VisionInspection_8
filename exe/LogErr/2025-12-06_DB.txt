@@ -1,0 +1,1 @@
+[2025-12-06 10:05:18.7897] Database Error. A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.)

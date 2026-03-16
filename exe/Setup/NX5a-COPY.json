@@ -1,0 +1,46 @@
+[
+  {
+    "Tag": "0",
+    "showType": 0,
+    "Text": "1-C",
+    "RelativeX": 0.1223671,
+    "RelativeY": 0.0222717151,
+    "Width": 45,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "buttontext",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 0,
+        "ToolNo": 4,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "1",
+    "showType": 0,
+    "Text": "2-C",
+    "RelativeX": 0.06920762,
+    "RelativeY": 0.0467706025,
+    "Width": 45,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "buttontext",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 1,
+        "ToolNo": 2,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  }
+]

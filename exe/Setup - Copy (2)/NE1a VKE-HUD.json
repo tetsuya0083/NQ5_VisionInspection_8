@@ -1,0 +1,1687 @@
+[
+  {
+    "Tag": "0",
+    "showType": 0,
+    "Text": "1-M1",
+    "RelativeX": -0.003009027,
+    "RelativeY": 0.213808462,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 6,
+        "ToolNo": 1,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "1",
+    "showType": 0,
+    "Text": "1-M2",
+    "RelativeX": 0.4884654,
+    "RelativeY": 0.182628065,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 1,
+        "ToolNo": 1,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "2",
+    "showType": 0,
+    "Text": "2-M1",
+    "RelativeX": 0.182547644,
+    "RelativeY": 0.0534521155,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 1,
+        "ToolNo": 5,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 7,
+        "ToolNo": 2,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "3",
+    "showType": 0,
+    "Text": "2-M2",
+    "RelativeX": 0.251755267,
+    "RelativeY": 0.0334075727,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 1,
+        "ToolNo": 10,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 7,
+        "ToolNo": 1,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "4",
+    "showType": 0,
+    "Text": "3-M1",
+    "RelativeX": 0.148445338,
+    "RelativeY": 0.4766147,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 5,
+        "ToolNo": 3,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "5",
+    "showType": 0,
+    "Text": "3-M2",
+    "RelativeX": 0.325977921,
+    "RelativeY": 0.486636966,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 1,
+        "ToolNo": 11,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "6",
+    "showType": 0,
+    "Text": "4-M1",
+    "RelativeX": 0.186559677,
+    "RelativeY": 0.478841871,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 6,
+        "ToolNo": 3,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "7",
+    "showType": 0,
+    "Text": "4-M2",
+    "RelativeX": 0.2577733,
+    "RelativeY": 0.456570148,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 6,
+        "ToolNo": 2,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "8",
+    "showType": 0,
+    "Text": "4-M3",
+    "RelativeX": 0.007021063,
+    "RelativeY": 0.657015562,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 6,
+        "ToolNo": 4,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "11",
+    "showType": 0,
+    "Text": "6-M1",
+    "RelativeX": 0.008024072,
+    "RelativeY": 0.7093541,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 12,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 4,
+        "ToolNo": 3,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "12",
+    "showType": 0,
+    "Text": "6-M2",
+    "RelativeX": 0.16850552,
+    "RelativeY": 0.903118,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 4,
+        "ToolNo": 4,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 7,
+        "ToolNo": 13,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "13",
+    "showType": 0,
+    "Text": "7-M1",
+    "RelativeX": 0.06218656,
+    "RelativeY": 0.5144766,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 3,
+        "ToolNo": 2,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "14",
+    "showType": 0,
+    "Text": "7-M2",
+    "RelativeX": 0.119358078,
+    "RelativeY": 0.5022272,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 5,
+        "ToolNo": 1,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "15",
+    "showType": 0,
+    "Text": "7-M3",
+    "RelativeX": 0.205616847,
+    "RelativeY": 0.4521158,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 6,
+        "ToolNo": 1,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "16",
+    "showType": 0,
+    "Text": "7-M4",
+    "RelativeX": 0.287863582,
+    "RelativeY": 0.472160369,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 1,
+        "ToolNo": 1,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "17",
+    "showType": 0,
+    "Text": "7-M5",
+    "RelativeX": 0.4222668,
+    "RelativeY": 0.5155902,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 5,
+        "ToolNo": 1,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "18",
+    "showType": 0,
+    "Text": "7-M6",
+    "RelativeX": 0.575727165,
+    "RelativeY": 0.4922049,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 3,
+        "ToolNo": 3,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "19",
+    "showType": 0,
+    "Text": "7-M7",
+    "RelativeX": 0.524573743,
+    "RelativeY": 0.556792855,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 3,
+        "ToolNo": 1,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "20",
+    "showType": 0,
+    "Text": "7-M8",
+    "RelativeX": 0.482447356,
+    "RelativeY": 0.7138085,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 2,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "21",
+    "showType": 0,
+    "Text": "7-M9",
+    "RelativeX": 0.483450353,
+    "RelativeY": 0.7427617,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 3,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "22",
+    "showType": 0,
+    "Text": "7-M10",
+    "RelativeX": 0.4794383,
+    "RelativeY": 0.777282834,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 9,
+        "ToolNo": 1,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "23",
+    "showType": 0,
+    "Text": "7-M11",
+    "RelativeX": 0.4884654,
+    "RelativeY": 0.853006661,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 4,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "24",
+    "showType": 0,
+    "Text": "7-M12",
+    "RelativeX": 0.526579738,
+    "RelativeY": 0.869710445,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 5,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "25",
+    "showType": 0,
+    "Text": "7-M13",
+    "RelativeX": 0.5656971,
+    "RelativeY": 0.8797327,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 6,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "26",
+    "showType": 0,
+    "Text": "7-M14",
+    "RelativeX": 0.593781352,
+    "RelativeY": 0.8674833,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 7,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 8,
+        "ToolNo": 6,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "27",
+    "showType": 0,
+    "Text": "7-M15",
+    "RelativeX": 0.6278837,
+    "RelativeY": 0.871937633,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 7,
+        "ToolNo": 4,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 8,
+        "ToolNo": 7,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "28",
+    "showType": 0,
+    "Text": "7-M16",
+    "RelativeX": 0.905717134,
+    "RelativeY": 0.5690423,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 4,
+        "ToolNo": 8,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "29",
+    "showType": 0,
+    "Text": "7-M17",
+    "RelativeX": 0.93480444,
+    "RelativeY": 0.7884187,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 4,
+        "ToolNo": 9,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "30",
+    "showType": 0,
+    "Text": "8-M1",
+    "RelativeX": 0.924774349,
+    "RelativeY": 0.7349666,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 3,
+        "ToolNo": 2,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 4,
+        "ToolNo": 1,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "31",
+    "showType": 0,
+    "Text": "8-M2",
+    "RelativeX": 0.939819455,
+    "RelativeY": 0.844098,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 3,
+        "ToolNo": 4,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 4,
+        "ToolNo": 3,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "32",
+    "showType": 0,
+    "Text": "8-M3",
+    "RelativeX": 0.931795359,
+    "RelativeY": 0.8808463,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 4,
+        "ToolNo": 3,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "33",
+    "showType": 0,
+    "Text": "8-M4",
+    "RelativeX": 0.888666,
+    "RelativeY": 0.8997773,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 3,
+        "ToolNo": 5,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 4,
+        "ToolNo": 2,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "34",
+    "showType": 0,
+    "Text": "8-M5",
+    "RelativeX": 0.8465396,
+    "RelativeY": 0.9008909,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 3,
+        "ToolNo": 6,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 4,
+        "ToolNo": 4,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "35",
+    "showType": 0,
+    "Text": "8-M6",
+    "RelativeX": 0.829488456,
+    "RelativeY": 0.832962155,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 3,
+        "ToolNo": 7,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "36",
+    "showType": 0,
+    "Text": "8-M7",
+    "RelativeX": 0.842527568,
+    "RelativeY": 0.521158159,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 3,
+        "ToolNo": 1,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "37",
+    "showType": 0,
+    "Text": "8-M8",
+    "RelativeX": 0.777332,
+    "RelativeY": 0.4910913,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 3,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "38",
+    "showType": 0,
+    "Text": "8-M9",
+    "RelativeX": 0.794383168,
+    "RelativeY": 0.8363029,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 4,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "39",
+    "showType": 0,
+    "Text": "8-M10",
+    "RelativeX": 0.794383168,
+    "RelativeY": 0.8819599,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 5,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "40",
+    "showType": 0,
+    "Text": "8-M11",
+    "RelativeX": 0.7572718,
+    "RelativeY": 0.9042316,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 7,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "41",
+    "showType": 0,
+    "Text": "8-M12",
+    "RelativeX": 0.7331996,
+    "RelativeY": 0.8841871,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 6,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "42",
+    "showType": 0,
+    "Text": "8-M13",
+    "RelativeX": 0.716148436,
+    "RelativeY": 0.770601332,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 1,
+        "ToolNo": 4,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 2,
+        "ToolNo": 1,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 7,
+        "ToolNo": 9,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "43",
+    "showType": 0,
+    "Text": "8-M14",
+    "RelativeX": 0.672016,
+    "RelativeY": 0.8073497,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 1,
+        "ToolNo": 7,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 7,
+        "ToolNo": 7,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "44",
+    "showType": 0,
+    "Text": "8-M15",
+    "RelativeX": 0.6760281,
+    "RelativeY": 0.8752784,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 7,
+        "ToolNo": 11,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 8,
+        "ToolNo": 5,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "45",
+    "showType": 0,
+    "Text": "8-M16",
+    "RelativeX": 0.6559679,
+    "RelativeY": 0.8986637,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 1,
+        "ToolNo": 8,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 7,
+        "ToolNo": 6,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 8,
+        "ToolNo": 4,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "46",
+    "showType": 0,
+    "Text": "8-M17",
+    "RelativeX": 0.629889667,
+    "RelativeY": 0.8953229,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 1,
+        "ToolNo": 10,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 7,
+        "ToolNo": 5,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 8,
+        "ToolNo": 3,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "47",
+    "showType": 0,
+    "Text": "8-M18",
+    "RelativeX": 0.606820464,
+    "RelativeY": 0.9120267,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 8,
+        "ToolNo": 2,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 8,
+        "ToolNo": 11,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "48",
+    "showType": 0,
+    "Text": "8-M19",
+    "RelativeX": 0.575727165,
+    "RelativeY": 0.910913169,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 8,
+        "ToolNo": 1,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "55",
+    "showType": 0,
+    "Text": "10-M1",
+    "RelativeX": 0.230692074,
+    "RelativeY": 0.478841871,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 5,
+        "ToolNo": 4,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 6,
+        "ToolNo": 5,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 6,
+        "ToolNo": 6,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "58",
+    "showType": 0,
+    "Text": "11-C2",
+    "RelativeX": 0.834503531,
+    "RelativeY": 0.0692963749,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Purple",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 1,
+        "ToolNo": 2,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "60",
+    "showType": 0,
+    "Text": "7-M22",
+    "RelativeX": 0.462387174,
+    "RelativeY": 0.4910913,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 5,
+        "ToolNo": 2,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "61",
+    "showType": 0,
+    "Text": "7-M25",
+    "RelativeX": 0.430290878,
+    "RelativeY": 0.409799546,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 8,
+        "ToolNo": 12,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "62",
+    "showType": 0,
+    "Text": "7-M26",
+    "RelativeX": 0.385155469,
+    "RelativeY": 0.41091314,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 8,
+        "ToolNo": 11,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "63",
+    "showType": 0,
+    "Text": "7-M27",
+    "RelativeX": 0.342026085,
+    "RelativeY": 0.41091314,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 8,
+        "ToolNo": 10,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "64",
+    "showType": 0,
+    "Text": "12-M1",
+    "RelativeX": 0.004012036,
+    "RelativeY": 0.76057905,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 11,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 4,
+        "ToolNo": 1,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "65",
+    "showType": 0,
+    "Text": "12-M2",
+    "RelativeX": 0.208625883,
+    "RelativeY": 0.9020045,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 4,
+        "ToolNo": 2,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 7,
+        "ToolNo": 12,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "66",
+    "showType": 0,
+    "Text": "7-M18",
+    "RelativeX": 0.3219659,
+    "RelativeY": 0.443207115,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 1,
+        "ToolNo": 2,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "67",
+    "showType": 0,
+    "Text": "7-M24",
+    "RelativeX": 0.6158475,
+    "RelativeY": 0.489977717,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 5,
+        "ToolNo": 2,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "68",
+    "showType": 0,
+    "Text": "7-M23",
+    "RelativeX": 0.481444329,
+    "RelativeY": 0.66258353,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 1,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "69",
+    "showType": 0,
+    "Text": "Bracket",
+    "RelativeX": 0.464393169,
+    "RelativeY": 0.824053466,
+    "Width": 50,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 10,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "70",
+    "showType": 0,
+    "Text": "2-M4",
+    "RelativeX": 0.48445335,
+    "RelativeY": 0.944320738,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 9,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "71",
+    "showType": 0,
+    "Text": "2-M3",
+    "RelativeX": 0.537612855,
+    "RelativeY": 0.934298456,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 2,
+        "ToolNo": 8,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "72",
+    "showType": 0,
+    "Text": "2-M6",
+    "RelativeX": 0.5997994,
+    "RelativeY": 0.6937639,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 8,
+        "ToolNo": 8,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "73",
+    "showType": 0,
+    "Text": "2-M5",
+    "RelativeX": 0.631895661,
+    "RelativeY": 0.747216046,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Blue",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 7,
+        "ToolNo": 3,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 8,
+        "ToolNo": 9,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "74",
+    "showType": 0,
+    "Text": "9-M6",
+    "RelativeX": 0.7021063,
+    "RelativeY": 0.9131403,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Green",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 1,
+        "ToolNo": 6,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 7,
+        "ToolNo": 8,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "75",
+    "showType": 0,
+    "Text": "9-M5",
+    "RelativeX": 0.765295863,
+    "RelativeY": 0.766147,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Green",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 1,
+        "ToolNo": 3,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 2,
+        "ToolNo": 2,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      },
+      {
+        "ProgramNo": 7,
+        "ToolNo": 10,
+        "CameraNo": 2,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "76",
+    "showType": 0,
+    "Text": "9-M7",
+    "RelativeX": 0.929789364,
+    "RelativeY": 0.6792873,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Green",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 3,
+        "ToolNo": 3,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "77",
+    "showType": 0,
+    "Text": "Bracket",
+    "RelativeX": 0.9338014,
+    "RelativeY": 0.7572383,
+    "Width": 50,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Red",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 4,
+        "ToolNo": 10,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  },
+  {
+    "Tag": "78",
+    "showType": 0,
+    "Text": "11-C1",
+    "RelativeX": 0.5336008,
+    "RelativeY": 0.249466956,
+    "Width": 40,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "Purple",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": [
+      {
+        "ProgramNo": 6,
+        "ToolNo": 2,
+        "CameraNo": 1,
+        "PosAdjust": true,
+        "Result": 0
+      }
+    ]
+  }
+]
