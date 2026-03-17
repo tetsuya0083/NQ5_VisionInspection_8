@@ -1000,8 +1000,6 @@ namespace YONGSAN_CPAD_VISION
 
                                             int toolResult = Data_Result_Cam[cam][blockIndex][idx + gap] == 0 ? 2 : 1;
                                             int toolScore = Data_Result_Cam[cam][blockIndex][idx + gap + 1];
-                                            // 프로그램 번호가 아니라 찍는 순서와 비교
-                                            //if (tool.CameraNo == camNo && tool.ProgramNo == (blockIndex + 1) && tool.ToolNo == toolNum)
                                             if (tool.CameraNo == camNo && tool.ProgramNo == progNo && tool.ToolNo == toolNum)
                                             {
                                                 tool.Result = toolResult;

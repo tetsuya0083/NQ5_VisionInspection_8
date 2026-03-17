@@ -76,7 +76,6 @@ namespace Vision.Shared
     public class Tool
     {
         [Category("Tool Info")]
-        [DisplayName("Process Order")]
         public int ProgramNo { get; set; }
 
         [Category("Tool Info")]
