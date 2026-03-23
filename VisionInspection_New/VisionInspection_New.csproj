@@ -11,6 +11,8 @@
 	<ApplicationIcon>TP Run.ico</ApplicationIcon>
 	<RootNamespace>VisionInspection</RootNamespace>
 	<AssemblyName>VisionInspection</AssemblyName>
+	<OutputPath>..\exe_New\</OutputPath>
+	<Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>

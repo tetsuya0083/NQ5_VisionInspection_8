@@ -8,6 +8,7 @@
     <Nullable>disable</Nullable><!-- 기존 코드 경고 방지 -->
 	<ImplicitUsings>disable</ImplicitUsings><!-- 기존 using 방식 유지 -->
 	<ApplicationIcon>TP Setup.ico</ApplicationIcon>
+	<AssemblyName>VisionSetup</AssemblyName>
 	<OutputPath>..\exe_New\</OutputPath>
 	<Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
