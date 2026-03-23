@@ -1,0 +1,159 @@
+.NET 4.8 → .NET 8.0 마이그레이션 변경 사항 보고서
+======================================================
+작성일: 2026-03-23
+
+■ 분석 대상 프로젝트
+  - VisionInspection       : .NET 4.8 (원본)
+  - VisionSetup            : .NET 4.8 (원본)
+  - VisionInspection_New   : .NET 8.0 (업그레이드)
+  - VisionSetup_New        : .NET 8.0 (업그레이드)
+
+======================================================
+
+[1] 프로젝트 파일(.csproj) 형식 변경
+--------------------------------------
+  항목                  | .NET 4.8                              | .NET 8.0
+  ----------------------|---------------------------------------|------------------------------------------
+  프로젝트 형식         | Traditional MSBuild (ToolsVersion=15.0)| SDK-style (<Project Sdk="Microsoft.NET.Sdk">)
+  대상 프레임워크       | <TargetFrameworkVersion>v4.8           | <TargetFramework>net8.0-windows
+  Windows Forms 선언    | 암묵적 (자동 인식)                    | 명시적 <UseWindowsForms>true</UseWindowsForms>
+
+
+[2] NuGet 패키지 관리 방식 변경
+---------------------------------
+  항목                  | .NET 4.8                              | .NET 8.0
+  ----------------------|---------------------------------------|------------------------------------------
+  관리 방식             | 별도 packages.config 파일             | .csproj 내 <PackageReference> 직접 선언
+  DLL 경로 지정         | <HintPath>로 로컬 경로 명시           | NuGet 자동 복원
+  packages.config       | 존재                                  | 제거됨
+
+  공통 패키지:
+    - Newtonsoft.Json 13.0.4 (동일 유지)
+
+  신규 추가 패키지 (.NET 8.0):
+    - Microsoft.Data.SqlClient 7.0.0  ← System.Data.SqlClient 대체
+
+
+[3] SQL Client 네임스페이스 변경
+----------------------------------
+  .NET 8.0에서는 System.Data.SqlClient가 더 이상 포함되지 않아
+  Microsoft.Data.SqlClient로 교체됨.
+  크로스 컴파일을 위해 전처리기 지시문(#if) 방식 채택.
+
+  변경된 파일:
+    - Common/Common.cs (lines 6-10)
+    - VisionSetup_New/MainForm.cs (lines 7-11)
+
+  변경 패턴:
+    #if NET8_0_OR_GREATER
+    using Microsoft.Data.SqlClient;
+    #else
+    using System.Data.SqlClient;
+    #endif
+
+  ※ 잠재적 이슈 (미처리 파일): -> 모두 처리함.
+    - VisionInspection_New/MeasurementForm_CA.cs  (line 7): using System.Data.SqlClient; 직접 사용 중
+    - VisionInspection_New/MeasurementForm_IMG.cs (line 7): 동일 이슈
+    → 전처리기 분기 처리 누락. .NET 8.0 빌드 시 오류 발생 가능.
+
+
+[4] 구성 파일 변경
+-------------------
+  파일                       | .NET 4.8                        | .NET 8.0
+  ---------------------------|---------------------------------|----------------------------
+  App.config                 | 존재 (supportedRuntime v4.0)    | 제거됨
+  packages.config            | 존재                            | 제거됨
+  Properties/AssemblyInfo.cs | 존재                            | 제거됨 (SDK 자동 생성)
+  Properties/Resources.*     | 존재                            | 제거됨
+  Properties/Settings.*      | 존재                            | 제거됨
+
+
+[5] 컴파일러 옵션 추가 (.NET 8.0 신규)
+----------------------------------------
+  <Nullable>disable</Nullable>
+    → 기존 코드 nullable 경고 방지
+
+  <ImplicitUsings>disable</ImplicitUsings>
+    → 기존 using 방식 유지
+
+  <PlatformTarget>x64</PlatformTarget>
+
+
+[6] 출력 경로 변경
+-------------------
+  .NET 4.8 : ..\exe\
+  .NET 8.0  : ..\exe_New\
+
+
+[7] 파일 구성 변경 요약
+-------------------------
+  항목               | VisionInspection | VisionInspection_New | VisionSetup | VisionSetup_New
+  -------------------|------------------|----------------------|-------------|----------------
+  총 파일 수         | 25               | 24                   | 18          | 17
+  .cs 파일 수        | 13               | 13                   | 9           | 9
+  .resx 파일 수      | 6                | 6                    | 4           | 4
+  Properties 폴더    | 있음             | 없음                 | 있음        | 없음
+  App.config         | 있음             | 없음                 | 있음        | 없음
+  packages.config    | 있음             | 없음                 | 있음        | 없음
+
+
+[8] COM 참조
+-------------
+  XGCommLib COM 참조: .NET 4.8 / .NET 8.0 양쪽 모두 동일하게 유지됨
+
+
+[9] 소스 코드 변경 요약
+-------------------------
+  대부분의 .cs 파일은 내용 변경 없이 동일.
+  마이그레이션은 주로 프로젝트 구성(.csproj) 변경 위주로 이루어졌으며,
+  유일한 코드 변경은 SQL Client 네임스페이스 전처리기 분기 처리.
+
+======================================================
+
+---
+  ⚠ 중간 위험 — 향후 업그레이드 시 빌드 깨짐                                                                                
+   
+  MSB3825 — BinaryFormatter 지원 중단 (VisionSetup_New)                                                                     
+  VisionSetup_New/ModelSetupForm.resx : warning MSB3825     
+  Resource "imgTree.ImageStream" → BinaryFormatter 사용
+  - .NET 8에서는 동작하지만 .NET 9에서 완전히 제거됨
+  - ModelSetupForm.resx에 포함된 ImageList 리소스가 내부적으로 BinaryFormatter로 직렬화되어 있는 것이 원인
+  - 지금 당장은 문제없으나, 추후 .NET 9 이상으로 올릴 경우 빌드 실패
+
+  단기 조치 — 경고만 억제하려면 VisionSetup_New.csproj에 추가:
+  <GenerateResourceWarnOnBinaryFormatterUse>false</GenerateResourceWarnOnBinaryFormatterUse>
+  근본 조치 — ModelSetupForm의 ImageList를 코드에서 직접 로드하는 방식으로 변경
+
+  ---
+  ⚠ 낮은 위험 — 동작 이상 가능성
+
+  CS9125 — SizeConst 미지정 (Common/Sharp7.cs:1442)
+  warning CS9125: Attribute parameter 'SizeConst' must be specified
+  - P/Invoke 관련 [MarshalAs] 특성에서 배열 크기(SizeConst) 미지정
+  - VisionInspection_New, VisionSetup_New 양쪽 모두 해당
+  - Sharp7는 Siemens S7 PLC 통신 라이브러리로 실제 통신 시 버퍼 크기 오류 가능성 있음
+  - 단, Sharp7.cs는 외부 라이브러리 코드이므로 직접 수정보다는 최신 버전의 Sharp7 NuGet 패키지로 교체를 권장
+
+  ---
+  ℹ 무시 가능한 경고
+
+  ┌────────┬────────────────────────┬──────────────────────────────────────────────────────┐
+  │  경고  │          위치          │                         내용                         │
+  ├────────┼────────────────────────┼──────────────────────────────────────────────────────┤
+  │ CS8073 │ Common/Sharp7.cs:1288  │ GCHandle != null 비교가 항상 true — 로직 영향 없음   │
+  ├────────┼────────────────────────┼──────────────────────────────────────────────────────┤
+  │ CS0168 │ Scanner/MainForm.cs:67 │ catch (Exception ex) 에서 ex 미사용 — 기능 영향 없음 │
+  └────────┴────────────────────────┴──────────────────────────────────────────────────────┘
+
+  ---
+  요약
+
+  ┌─────────────────────────┬────────────────────────────────┬────────────────────────────┐
+  │          항목           │              영향              │       조치 필요 여부       │
+  ├─────────────────────────┼────────────────────────────────┼────────────────────────────┤
+  │ MSB3825 BinaryFormatter │ .NET 9 업그레이드 시 빌드 실패 │ 계획 있으면 미리 대응      │
+  ├─────────────────────────┼────────────────────────────────┼────────────────────────────┤
+  │ CS9125 SizeConst        │ PLC 통신 버퍼 오류 가능성      │ Sharp7 최신 버전 확인 권장 │
+  ├─────────────────────────┼────────────────────────────────┼────────────────────────────┤
+  │ CS8073, CS0168          │ 없음                           │ 무시 가능                  │
+  └─────────────────────────┴────────────────────────────────┴────────────────────────────┘
