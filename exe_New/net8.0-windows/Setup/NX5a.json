@@ -1,0 +1,16 @@
+[
+  {
+    "Tag": "0",
+    "showType": 0,
+    "Text": "Label0",
+    "RelativeX": 0.05015045,
+    "RelativeY": 0.055679288,
+    "Width": 35,
+    "Height": 20,
+    "BackColor": "White",
+    "ForeColor": "buttontext",
+    "FontName": "Microsoft Sans Serif",
+    "FontSize": 8.0,
+    "ToolList": []
+  }
+]
