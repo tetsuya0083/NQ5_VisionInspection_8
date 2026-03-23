@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+	<TargetFramework>net8.0-windows</TargetFramework>
+	<UseWindowsForms>true</UseWindowsForms>
+	<PlatformTarget>x64</PlatformTarget>
+	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	<Nullable>disable</Nullable>
+	<ImplicitUsings>disable</ImplicitUsings>
+	<ApplicationIcon>TP Run.ico</ApplicationIcon>
+	<RootNamespace>VisionInspection</RootNamespace>
+	<AssemblyName>VisionInspection</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Common\CameraObject.cs" Link="CameraObject.cs" />
+    <Compile Include="..\Common\Common.cs" Link="Common.cs" />
+    <Compile Include="..\Common\Data.cs" Link="Data.cs" />
+    <Compile Include="..\Common\Define.cs" Link="Define.cs" />
+    <Compile Include="..\Common\PLC.cs" Link="PLC.cs" />
+    <Compile Include="..\Common\Sharp7.cs" Link="Sharp7.cs" />
+    <Compile Include="..\Common\Util.cs" Link="Util.cs" />
+    <Compile Include="..\Common\XGCommLib.cs" Link="XGCommLib.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="XGCommLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>2cff650c-6df0-48ae-9b06-c8dd467e0cd3</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Vision.Shared\Vision.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
