@@ -100,7 +100,9 @@ namespace YONGSAN_CPAD_VISION
             if (!Directory.Exists(folder))
                 Directory.CreateDirectory(folder);
 
-            string file = Path.Combine(folder, mo.ModelServerName + ".json");
+            // john: Models.ini의 ServerName에 구분자 사용하기 위해 추가.
+            string fileName = mo.ModelServerName.Replace('/', '_').Replace('\\', '_');
+            string file = Path.Combine(folder, fileName + ".json");
             return file;
         }
 
@@ -162,8 +164,10 @@ namespace YONGSAN_CPAD_VISION
                 string json = JsonConvert.SerializeObject(LabelList, Formatting.Indented);
                 File.WriteAllText(file, json);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                // john: 비어 있어서 코드 추가.
+                MessageBox.Show("Failed to SaveInformation(). " + ex.Message);
             }
         }
     }
