@@ -377,6 +377,7 @@ namespace VisionInspection
         public ResultForm formResult = null;
         protected override void WndProc(ref Message m)
         {
+            // 0x0400 ~ 0x7FFF WM_USER 개발자가 임의로 정의해서 쓰는 메시지.
             if (m.Msg >= 0x0400 && m.Msg < 0x7FFF)
             {
                 try
