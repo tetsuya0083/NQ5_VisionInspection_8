@@ -8,7 +8,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -17,12 +17,12 @@
     "Tag": "1",
     "showType": 0,
     "Text": "2-C",
-    "RelativeX": 0.1444333,
-    "RelativeY": 0.051224943,
+    "RelativeX": 0.1434303,
+    "RelativeY": 0.04899777,
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -36,7 +36,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Red",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -50,7 +50,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -64,7 +64,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -78,7 +78,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -92,7 +92,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -106,7 +106,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -120,7 +120,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []

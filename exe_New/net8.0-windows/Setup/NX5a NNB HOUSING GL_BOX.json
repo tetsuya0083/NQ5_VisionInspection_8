@@ -3,12 +3,12 @@
     "Tag": "0",
     "showType": 0,
     "Text": "9-M",
-    "RelativeX": 0.23570712,
+    "RelativeX": 0.23671013,
     "RelativeY": 0.03452116,
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -22,7 +22,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -36,7 +36,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -50,7 +50,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -64,7 +64,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Red",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -78,7 +78,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -92,7 +92,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -106,7 +106,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -120,7 +120,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -134,7 +134,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -148,7 +148,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -162,7 +162,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -176,7 +176,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -190,7 +190,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -204,7 +204,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -218,7 +218,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
@@ -232,7 +232,7 @@
     "Width": 60,
     "Height": 35,
     "BackColor": "White",
-    "ForeColor": "Black",
+    "ForeColor": "Blue",
     "FontName": "Microsoft Sans Serif",
     "FontSize": 12.0,
     "ToolList": []
