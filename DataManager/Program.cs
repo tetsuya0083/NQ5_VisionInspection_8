@@ -35,6 +35,13 @@ namespace DataManager
         [STAThread]
         static void Main()
         {
+            Application.ThreadException += (s, ex) =>
+                MessageBox.Show($"[Unhandled Thread Exception]\n{ex.Exception.Message}\n\n{ex.Exception.StackTrace}",
+                    "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            AppDomain.CurrentDomain.UnhandledException += (s, ex) =>
+                MessageBox.Show($"[Unhandled Exception]\n{((Exception)ex.ExceptionObject).Message}",
+                    "치명적 오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             if (DoInstanceExist("Vision Data Manager"))
@@ -47,8 +54,11 @@ namespace DataManager
                 {
                     RunProgram();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    MessageBox.Show(
+                        $"[DataManager 시작 오류]\n\n{ex.GetType().Name}: {ex.Message}\n\n{ex.StackTrace}",
+                        "실행 오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -65,8 +75,11 @@ namespace DataManager
                     // 뮤텍스 릴리즈
                     mut.ReleaseMutex();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    MessageBox.Show(
+                        $"[DataManager 시작 오류]\n\n{ex.GetType().Name}: {ex.Message}\n\n{ex.StackTrace}",
+                        "실행 오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 return true;
             }
@@ -83,6 +96,8 @@ namespace DataManager
         private static void RunProgram()
         {
             string iniEquiptment = Util.GetWorkingDirectory() + "\\Equipment.ini";
+            if (!File.Exists(iniEquiptment))
+                throw new FileNotFoundException($"Equipment.ini 파일이 없습니다: {iniEquiptment}");
             EQUIPMENT = Util.GetIniFileString(iniEquiptment, "Equipment", "Code", "").ToUpper();
             Application.Run(new MainForm());
         }
