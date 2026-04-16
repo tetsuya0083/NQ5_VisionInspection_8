@@ -402,9 +402,9 @@ namespace VisionInspection
 
                         if (VisionCore != null && (VisionCore.CurrentModel == null || !File.Exists(VisionCore.CurrentModel.ModelImage)))
                         {
-                            picModel.Left = picModel.Top = 0;
-                            picModel.Width = picModel.Parent.Width;
-                            picModel.Height = picModel.Parent.Height;
+                            // DockStyle.Fill 컨트롤은 크기를 수동으로 지정하지 않음
+                            // (이전 코드의 picModel.Height = picModel.Parent.Height는 panel2 높이까지 포함되어
+                            //  이후 label 위치 계산 오류를 유발함)
                             picModel.Visible = true;
                             return;
                         }
@@ -412,6 +412,9 @@ namespace VisionInspection
                         //Util.ResizePictureBox(bmImage, picModel, (Panel)picModel.Parent);
                         picModel.Image = bmImage;
                         picModel.Visible = true;
+
+                        // label 생성 전 DockStyle.Fill 크기가 올바른지 보장
+                        picModel.Parent?.PerformLayout();
 
                         ClearLabels();
                         for (int i = 0; i < VisionCore.CurrentModel.LabelList.Count; i++)
