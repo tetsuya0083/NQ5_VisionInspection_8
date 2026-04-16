@@ -403,9 +403,12 @@ namespace VisionInspection
                         if (VisionCore != null && (VisionCore.CurrentModel == null || !File.Exists(VisionCore.CurrentModel.ModelImage)))
                         {
                             // DockStyle.Fill 컨트롤은 크기를 수동으로 지정하지 않음
-                            // (이전 코드의 picModel.Height = picModel.Parent.Height는 panel2 높이까지 포함되어
+                            // (picModel.Height = picModel.Parent.Height는 panel2 높이까지 포함되어
                             //  이후 label 위치 계산 오류를 유발함)
-                            picModel.Visible = true;
+                            //picModel.Left = picModel.Top = 0;
+                            //picModel.Width = picModel.Parent.Width;
+                            //picModel.Height = picModel.Parent.Height;
+                            //picModel.Visible = true;
                             return;
                         }
                         Bitmap bmImage = Util.GetBitmapFromFile(VisionCore.CurrentModel.ModelImage);
