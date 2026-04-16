@@ -408,7 +408,7 @@ namespace VisionInspection
                             //picModel.Left = picModel.Top = 0;
                             //picModel.Width = picModel.Parent.Width;
                             //picModel.Height = picModel.Parent.Height;
-                            //picModel.Visible = true;
+                            picModel.Visible = true;
                             return;
                         }
                         Bitmap bmImage = Util.GetBitmapFromFile(VisionCore.CurrentModel.ModelImage);
