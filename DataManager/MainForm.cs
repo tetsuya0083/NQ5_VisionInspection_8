@@ -1,4 +1,4 @@
-﻿using Common;
+using Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,11 +35,9 @@ namespace DataManager
             this.Hide();
         }
 
-        public string iniSetup = string.Empty;
         public string iniManager = string.Empty;
         private void MainForm_Load(object sender, EventArgs e)
         {
-            iniSetup = Util.GetWorkingDirectory() + "\\SetupE204.ini";
             iniManager = Util.GetWorkingDirectory() + "\\DataManager.ini";
             LoadValues();
 
@@ -53,11 +51,11 @@ namespace DataManager
         public int TimerInterval = 1;
         private void LoadValues()
         {
-            txtFolderOriginal.Text = FolderOriginal = Util.GetIniFileString(iniSetup, "Setup", "DataFolder", string.Empty);
+            txtFolderOriginal.Text = FolderOriginal = Util.GetIniFileString(iniManager, "Setup", "DataFolder", string.Empty);
             txtDayDeleteOriginal.Text = (DayDeleteOriginal = Util.GetIniFileInt(iniManager, "Setup", "DayDeleteOriginal", 10)).ToString();
-            txtFolderResult.Text = FolderResult = Util.GetIniFileString(iniSetup, "Setup", "SaveFolder", "C:\\VISION_DATA");
+            txtFolderResult.Text = FolderResult = Util.GetIniFileString(iniManager, "Setup", "SaveFolder", "C:\\VISION_DATA");
             txtDayDeleteResult.Text = (DayDeleteResult = Util.GetIniFileInt(iniManager, "Setup", "DayDeleteResult", 10)).ToString();
-            txtInterval.Text = (TimerInterval = Util.GetIniFileInt(iniManager, "Setup", "Interval", 5)).ToString();
+            txtInterval.Text = (TimerInterval = Math.Max(10, Util.GetIniFileInt(iniManager, "Setup", "Interval", 10))).ToString();
 
             listDrives.Items.Clear();
             DriveInfo[] drives = DriveInfo.GetDrives();
@@ -81,7 +79,7 @@ namespace DataManager
             LoadValues();
             DoProcess();
 
-            timerWork.Interval = Util.GetIniFileInt(iniManager, "Setup", "Interval") * 1000;
+            timerWork.Interval = Math.Max(10, Util.GetIniFileInt(iniManager, "Setup", "Interval", 10)) * 1000;
             timerWork.Start();
         }
 
@@ -108,39 +106,166 @@ namespace DataManager
 
         private void DoDeleteFile(string folder, int day)
         {
-            // 폴더가 존재하는지 확인
             if (!Directory.Exists(folder))
             {
-                Util.WriteLog($"폴더가 존재하지 않습니다: {folder}", "Log", "DataManager");
+                Util.WriteLog($"Folder not found: {folder}", "Log", "DataManager");
                 return;
             }
 
-            // 오늘 날짜 가져오기
             DateTime currentDate = DateTime.Now;
 
             try
             {
-                // 폴더 내의 모든 파일 검색
                 string[] files = Directory.GetFiles(folder, "*", SearchOption.AllDirectories);
                 foreach (string file in files)
                 {
-                    // 파일의 생성 날짜 가져오기
                     DateTime creationDate = File.GetCreationTime(file);
 
-                    // 생성 날짜가 90일을 초과했는지 확인
                     if ((currentDate - creationDate).TotalDays > day)
                     {
-                        // 파일 삭제
                         File.Delete(file);
-                        Util.WriteLog($"삭제된 파일: {file}", "Log", "DataManager");
+                        Util.WriteLog($"Deleted: {file}", "Log", "DataManager");
                     }
                 }
 
-                Util.WriteLog("작업이 완료되었습니다.", "Log", "DataManager");
+                Util.WriteLog("Process completed.", "Log", "DataManager");
             }
             catch (Exception ex)
             {
-                Util.WriteLog($"파일 삭제 오류 발생: {ex.Message}", "Log", "DataManager");
+                Util.WriteLog($"File deletion error: {ex.Message}", "Log", "DataManager");
+            }
+        }
+
+        private void btnBrowseDataFolder_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog dlg = new FolderBrowserDialog())
+            {
+                dlg.SelectedPath = txtFolderOriginal.Text;
+                if (dlg.ShowDialog(this) == DialogResult.OK)
+                {
+                    string newPath = dlg.SelectedPath;
+                    if (MessageBox.Show($"Set the following path?\n\n{newPath}",
+                        "Confirm DataFolder", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                    {
+                        FolderOriginal = newPath;
+                        txtFolderOriginal.Text = newPath;
+                        Util.SetIniFileString(iniManager, "Setup", "DataFolder", newPath);
+                    }
+                }
+            }
+        }
+
+        private void btnBrowseSaveFolder_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog dlg = new FolderBrowserDialog())
+            {
+                dlg.SelectedPath = txtFolderResult.Text;
+                if (dlg.ShowDialog(this) == DialogResult.OK)
+                {
+                    string newPath = dlg.SelectedPath;
+                    if (MessageBox.Show($"Set the following path?\n\n{newPath}",
+                        "Confirm SaveFolder", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                    {
+                        FolderResult = newPath;
+                        txtFolderResult.Text = newPath;
+                        Util.SetIniFileString(iniManager, "Setup", "SaveFolder", newPath);
+                    }
+                }
+            }
+        }
+
+        private int? ShowNumberInputDialog(string title, int currentValue, int minValue)
+        {
+            Form dlg = new Form();
+            dlg.Text = title;
+            dlg.Size = new Size(300, 165);
+            dlg.FormBorderStyle = FormBorderStyle.FixedDialog;
+            dlg.StartPosition = FormStartPosition.CenterParent;
+            dlg.MaximizeBox = false;
+            dlg.MinimizeBox = false;
+
+            TextBox txt = new TextBox();
+            txt.Text = currentValue.ToString();
+            txt.Location = new Point(10, 10);
+            txt.Size = new Size(265, 30);
+            txt.TextAlign = HorizontalAlignment.Center;
+            txt.KeyPress += (s, ev) => {
+                if (!char.IsDigit(ev.KeyChar) && ev.KeyChar != (char)Keys.Back)
+                    ev.Handled = true;
+            };
+
+            Label lblMin = new Label();
+            lblMin.Text = $"Minimum: {minValue}";
+            lblMin.Location = new Point(10, 45);
+            lblMin.Size = new Size(265, 20);
+            lblMin.TextAlign = ContentAlignment.MiddleCenter;
+            lblMin.ForeColor = Color.Gray;
+
+            Button btnOk = new Button();
+            btnOk.Text = "OK";
+            btnOk.Location = new Point(10, 75);
+            btnOk.Size = new Size(130, 40);
+
+            Button btnCancel = new Button();
+            btnCancel.Text = "Cancel";
+            btnCancel.DialogResult = DialogResult.Cancel;
+            btnCancel.Location = new Point(145, 75);
+            btnCancel.Size = new Size(130, 40);
+
+            int result = 0;
+            bool confirmed = false;
+            btnOk.Click += (s, ev) => {
+                if (!int.TryParse(txt.Text, out int val) || val < minValue)
+                {
+                    MessageBox.Show($"Please enter a value of {minValue} or greater.", "Input Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txt.Focus();
+                    txt.SelectAll();
+                    return;
+                }
+                result = val;
+                confirmed = true;
+                dlg.Close();
+            };
+
+            dlg.Controls.AddRange(new Control[] { txt, lblMin, btnOk, btnCancel });
+            dlg.AcceptButton = btnOk;
+            dlg.CancelButton = btnCancel;
+            dlg.ShowDialog(this);
+
+            return confirmed ? result : (int?)null;
+        }
+
+        private void btnSetDayDeleteOriginal_Click(object sender, EventArgs e)
+        {
+            int? val = ShowNumberInputDialog("Set Original File Deletion Period", DayDeleteOriginal, 1);
+            if (val.HasValue)
+            {
+                DayDeleteOriginal = val.Value;
+                txtDayDeleteOriginal.Text = val.Value.ToString();
+                Util.SetIniFileString(iniManager, "Setup", "DayDeleteOriginal", val.Value.ToString());
+            }
+        }
+
+        private void btnSetDayDeleteResult_Click(object sender, EventArgs e)
+        {
+            int? val = ShowNumberInputDialog("Set Result File Deletion Period", DayDeleteResult, 1);
+            if (val.HasValue)
+            {
+                DayDeleteResult = val.Value;
+                txtDayDeleteResult.Text = val.Value.ToString();
+                Util.SetIniFileString(iniManager, "Setup", "DayDeleteResult", val.Value.ToString());
+            }
+        }
+
+        private void btnSetInterval_Click(object sender, EventArgs e)
+        {
+            int? val = ShowNumberInputDialog("Set Execution Interval (sec)", TimerInterval, 10);
+            if (val.HasValue)
+            {
+                TimerInterval = val.Value;
+                txtInterval.Text = val.Value.ToString();
+                Util.SetIniFileString(iniManager, "Setup", "Interval", val.Value.ToString());
             }
         }
     }

@@ -92,13 +92,8 @@ namespace DataManager
             }
             return true;
         }
-        public static string EQUIPMENT = string.Empty;
         private static void RunProgram()
         {
-            string iniEquiptment = Util.GetWorkingDirectory() + "\\Equipment.ini";
-            if (!File.Exists(iniEquiptment))
-                throw new FileNotFoundException($"Equipment.ini 파일이 없습니다: {iniEquiptment}");
-            EQUIPMENT = Util.GetIniFileString(iniEquiptment, "Equipment", "Code", "").ToUpper();
             Application.Run(new MainForm());
         }
     }
