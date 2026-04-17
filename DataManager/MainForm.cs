@@ -1,13 +1,7 @@
-using Common;
+﻿using Common;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DataManager
@@ -174,98 +168,42 @@ namespace DataManager
             }
         }
 
-        private int? ShowNumberInputDialog(string title, int currentValue, int minValue)
-        {
-            Form dlg = new Form();
-            dlg.Text = title;
-            dlg.Size = new Size(300, 165);
-            dlg.FormBorderStyle = FormBorderStyle.FixedDialog;
-            dlg.StartPosition = FormStartPosition.CenterParent;
-            dlg.MaximizeBox = false;
-            dlg.MinimizeBox = false;
-
-            TextBox txt = new TextBox();
-            txt.Text = currentValue.ToString();
-            txt.Location = new Point(10, 10);
-            txt.Size = new Size(265, 30);
-            txt.TextAlign = HorizontalAlignment.Center;
-            txt.KeyPress += (s, ev) => {
-                if (!char.IsDigit(ev.KeyChar) && ev.KeyChar != (char)Keys.Back)
-                    ev.Handled = true;
-            };
-
-            Label lblMin = new Label();
-            lblMin.Text = $"Minimum: {minValue}";
-            lblMin.Location = new Point(10, 45);
-            lblMin.Size = new Size(265, 20);
-            lblMin.TextAlign = ContentAlignment.MiddleCenter;
-            lblMin.ForeColor = Color.Gray;
-
-            Button btnOk = new Button();
-            btnOk.Text = "OK";
-            btnOk.Location = new Point(10, 75);
-            btnOk.Size = new Size(130, 40);
-
-            Button btnCancel = new Button();
-            btnCancel.Text = "Cancel";
-            btnCancel.DialogResult = DialogResult.Cancel;
-            btnCancel.Location = new Point(145, 75);
-            btnCancel.Size = new Size(130, 40);
-
-            int result = 0;
-            bool confirmed = false;
-            btnOk.Click += (s, ev) => {
-                if (!int.TryParse(txt.Text, out int val) || val < minValue)
-                {
-                    MessageBox.Show($"Please enter a value of {minValue} or greater.", "Input Error",
-                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txt.Focus();
-                    txt.SelectAll();
-                    return;
-                }
-                result = val;
-                confirmed = true;
-                dlg.Close();
-            };
-
-            dlg.Controls.AddRange(new Control[] { txt, lblMin, btnOk, btnCancel });
-            dlg.AcceptButton = btnOk;
-            dlg.CancelButton = btnCancel;
-            dlg.ShowDialog(this);
-
-            return confirmed ? result : (int?)null;
-        }
-
         private void btnSetDayDeleteOriginal_Click(object sender, EventArgs e)
         {
-            int? val = ShowNumberInputDialog("Set Original File Deletion Period", DayDeleteOriginal, 1);
-            if (val.HasValue)
+            using (NumberInputDialog dlg = new NumberInputDialog("Set Original File Deletion Period", DayDeleteOriginal, 1))
             {
-                DayDeleteOriginal = val.Value;
-                txtDayDeleteOriginal.Text = val.Value.ToString();
-                Util.SetIniFileString(iniManager, "Setup", "DayDeleteOriginal", val.Value.ToString());
+                if (dlg.ShowDialog(this) == DialogResult.OK)
+                {
+                    DayDeleteOriginal = dlg.Value;
+                    txtDayDeleteOriginal.Text = dlg.Value.ToString();
+                    Util.SetIniFileString(iniManager, "Setup", "DayDeleteOriginal", dlg.Value.ToString());
+                }
             }
         }
 
         private void btnSetDayDeleteResult_Click(object sender, EventArgs e)
         {
-            int? val = ShowNumberInputDialog("Set Result File Deletion Period", DayDeleteResult, 1);
-            if (val.HasValue)
+            using (NumberInputDialog dlg = new NumberInputDialog("Set Result File Deletion Period", DayDeleteResult, 1))
             {
-                DayDeleteResult = val.Value;
-                txtDayDeleteResult.Text = val.Value.ToString();
-                Util.SetIniFileString(iniManager, "Setup", "DayDeleteResult", val.Value.ToString());
+                if (dlg.ShowDialog(this) == DialogResult.OK)
+                {
+                    DayDeleteResult = dlg.Value;
+                    txtDayDeleteResult.Text = dlg.Value.ToString();
+                    Util.SetIniFileString(iniManager, "Setup", "DayDeleteResult", dlg.Value.ToString());
+                }
             }
         }
 
         private void btnSetInterval_Click(object sender, EventArgs e)
         {
-            int? val = ShowNumberInputDialog("Set Execution Interval (sec)", TimerInterval, 10);
-            if (val.HasValue)
+            using (NumberInputDialog dlg = new NumberInputDialog("Set Execution Interval (sec)", TimerInterval, 10))
             {
-                TimerInterval = val.Value;
-                txtInterval.Text = val.Value.ToString();
-                Util.SetIniFileString(iniManager, "Setup", "Interval", val.Value.ToString());
+                if (dlg.ShowDialog(this) == DialogResult.OK)
+                {
+                    TimerInterval = dlg.Value;
+                    txtInterval.Text = dlg.Value.ToString();
+                    Util.SetIniFileString(iniManager, "Setup", "Interval", dlg.Value.ToString());
+                }
             }
         }
     }
